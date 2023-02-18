@@ -3,7 +3,7 @@
 #include <stdio.h>
 using namespace std;
 
-void dayDisplay(int month, int numOfDays, int start);
+void dayDisplay(int numOfDays, int start);
 
 int main() {
 	int numOfDays;
@@ -16,51 +16,51 @@ int main() {
 	switch (month) {
 	case 1:
 		numOfDays = 31;
-		dayDisplay(month, numOfDays, start);
+		dayDisplay(numOfDays, start);
 		break;
 	case 2:
 		numOfDays = 28;
-		dayDisplay(month, numOfDays, start);
+		dayDisplay(numOfDays, start);
 		break;
 	case 3:
 		numOfDays = 31;
-		dayDisplay(month, numOfDays, start);
+		dayDisplay(numOfDays, start);
 		break;
 	case 4:
 		numOfDays = 30;
-		dayDisplay(month, numOfDays, start);
+		dayDisplay(numOfDays, start);
 		break;
 	case 5:
 		numOfDays = 31;
-		dayDisplay(month, numOfDays, start);
+		dayDisplay(numOfDays, start);
 		break;
 	case 6:
 		numOfDays = 30;
-		dayDisplay(month, numOfDays, start);
+		dayDisplay(numOfDays, start);
 		break;
 	case 7:
 		numOfDays = 31;
-		dayDisplay(month, numOfDays, start);
+		dayDisplay(numOfDays, start);
 		break;
 	case 8:
 		numOfDays = 31;
-		dayDisplay(month, numOfDays, start);
+		dayDisplay(numOfDays, start);
 		break;
 	case 9:
 		numOfDays = 30;
-		dayDisplay(month, numOfDays, start);
+		dayDisplay(numOfDays, start);
 		break;
 	case 10:
 		numOfDays = 31;
-		dayDisplay(month, numOfDays, start);
+		dayDisplay(numOfDays, start);
 		break;
 	case 11:
 		numOfDays = 30;
-		dayDisplay(month, numOfDays, start);
+		dayDisplay(numOfDays, start);
 		break;
 	case 12:
 		numOfDays = 31;
-		dayDisplay(month, numOfDays, start);
+		dayDisplay(numOfDays, start);
 		break;
 	}
 
@@ -68,8 +68,8 @@ int main() {
 	return 0;
 }
 
-void dayDisplay(int month, int numOfDays, int start) {
-	cout << "mon " << "tue " << "wed " << "thu " << "fri " << "sat " << "sun " << endl;
+void dayDisplay(int numOfDays, int start) {
+	cout << "mon tue wed thu fri sat sun " << endl;
 	for (int i = 1; i < start; i++)
 		cout << "  ";
 	for (int i = 1; i <= numOfDays; i++) {
