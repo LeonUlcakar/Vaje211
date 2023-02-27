@@ -79,7 +79,12 @@ void dayDisplay(int numOfDays, int start) {
 	for (int i = 1; i < start; i++)
 		cout << "  ";
 	for (int i = 1; i <= numOfDays; i++) {
-		cout << i << " ";
+		if (i < 10) {
+			cout << " " << i << " ";
+		}
+		else {
+			cout << i << " ";
+		}
 		if ((start + i - 1) % 7 == 0)
 			cout << "  " << endl;
 	}
