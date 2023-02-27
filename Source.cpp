@@ -62,7 +62,13 @@ int main() {
 		numOfDays = 31;
 		dayDisplay(numOfDays, start);
 		break;
+	default:
+		cout << "Enter a custom number of days: " << endl;
+		cin >> numOfDays;
+		dayDisplay(numOfDays, start);
+		break;
 	}
+	
 
 	
 	return 0;
