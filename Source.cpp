@@ -9,9 +9,9 @@ int main() {
 	int numOfDays;
 	int month;
 	int start;
-	cout << "Please enter your month 1-12" << endl;
+	cout << "Please enter your month 1-12 and anything else for custom: " << endl;
 	cin >> month;
-	cout << "Please enter your starting day 1-7" << endl;
+	cout << "Please enter your starting day 1-7: " << endl;
 	cin >> start;
 	switch (month) {
 	case 1:
@@ -78,7 +78,7 @@ void dayDisplay(int numOfDays, int start) {
 	//cout << "mon tue wed thu fri sat sun " << endl;
 	cout << " M  T  W  T  F  S  S " << endl;
 	for (int i = 1; i < start; i++)
-		cout << " ";
+		cout << "   ";
 	for (int i = 1; i <= numOfDays; i++) {
 		if (i < 10) {
 			cout << " " << i << " ";
