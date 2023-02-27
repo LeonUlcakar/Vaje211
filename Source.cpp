@@ -75,9 +75,10 @@ int main() {
 }
 
 void dayDisplay(int numOfDays, int start) {
-	cout << "mon tue wed thu fri sat sun " << endl;
+	//cout << "mon tue wed thu fri sat sun " << endl;
+	cout << " M  T  W  T  F  S  S " << endl;
 	for (int i = 1; i < start; i++)
-		cout << "  ";
+		cout << " ";
 	for (int i = 1; i <= numOfDays; i++) {
 		if (i < 10) {
 			cout << " " << i << " ";
